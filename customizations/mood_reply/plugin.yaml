@@ -1,0 +1,7 @@
+name: mood_reply
+version: "0.1.0"
+description: "Probabilistic reply gate for a shared multi-bot Discord channel. Adds a real random 'mood' on top of the adapter's free-response decision so two bots (Karane + Hakari) don't both answer every message. Answers when named directly; chimes in on the partner bot only sometimes (avoids bot-to-bot loops). Tunable via BOT_SELF_NAME/BOT_OTHER_NAME/REPLY_CHANCE/REACT_CHANCE."
+author: "Emilia/Shaula (DevOps)"
+kind: standalone
+hooks:
+  - pre_gateway_dispatch
